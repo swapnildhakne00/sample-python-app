@@ -4,6 +4,7 @@ metadata:
   name: python-todo
   labels: { app: python-todo }
 spec:
+  namespace: apps
   replicas: 1
   selector:
     matchLabels: { app: python-todo }
@@ -21,6 +22,7 @@ kind: Service
 metadata:
   name: python-todo
 spec:
+  namespace: apps
   type: NodePort
   selector:
     app: python-todo
