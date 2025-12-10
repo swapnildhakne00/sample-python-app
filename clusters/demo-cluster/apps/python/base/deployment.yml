@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: python-todo
-  labels: { app:  }
+  labels: { app: python-todo }
 spec:
   replicas: 1
   selector:
