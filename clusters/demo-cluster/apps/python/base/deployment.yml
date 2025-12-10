@@ -14,7 +14,7 @@ spec:
       containers:
         - name: python
           image: swapnilsrd/todo-python:v2
-          ports: [{ containerPort: 5000 }]
+          ports: [{ containerPort: 80 }]
 ---
 apiVersion: v1
 kind: Service
